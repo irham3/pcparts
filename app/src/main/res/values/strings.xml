@@ -4,6 +4,6 @@
     <string name="title_home">Home</string>
     <string name="title_favorite">Favorite</string>
 
-    <string name="no_data">Empty data</string>
+    <string name="no_data">Belum ada favorite</string>
     <string name="something_wrong">Oops.. something went wrong</string>
 </resources>

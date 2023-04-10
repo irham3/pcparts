@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="org.irham3.pcparts.ui.home.HomeFragment"
+        android:name="org.irham3.pcparts.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_favorite"
-        android:name="org.irham3.pcparts.ui.favorite.FavoriteFragment"
+        android:name="org.irham3.pcparts.favorite.FavoriteFragment"
         android:label="@string/title_favorite"
         tools:layout="@layout/fragment_favorite" />
 

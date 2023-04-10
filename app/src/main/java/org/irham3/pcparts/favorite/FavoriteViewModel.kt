@@ -1,13 +1,13 @@
-package org.irham3.pcparts.ui.home
+package org.irham3.pcparts.favorite
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class FavoriteViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+        value = "This is dashboard Fragment"
     }
     val text: LiveData<String> = _text
 }

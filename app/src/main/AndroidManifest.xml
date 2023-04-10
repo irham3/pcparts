@@ -12,6 +12,9 @@
         android:theme="@style/Theme.PCParts"
         tools:targetApi="31">
         <activity
+            android:name=".detail.DetailPartActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main">

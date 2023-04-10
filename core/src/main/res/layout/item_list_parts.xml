@@ -40,7 +40,7 @@
             android:id="@+id/top_space"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="10dp"
             app:layout_constraintBottom_toTopOf="@+id/tv_item_title"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -55,7 +55,7 @@
             app:layout_constraintBottom_toTopOf="@+id/tv_item_subtitle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:text="@string/text_primary" />
+            tools:text="@string/text_title" />
 
         <TextView
             android:id="@+id/tv_item_subtitle"
@@ -65,11 +65,11 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#B3FFFFFF"
+            android:textColor="#000000"
             app:layout_constraintBottom_toBottomOf="@+id/iv_item_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:text="@string/text_subtitle" />
+            tools:text="@string/text_description" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
