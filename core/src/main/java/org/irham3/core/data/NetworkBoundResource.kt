@@ -1,5 +1,6 @@
 package org.irham3.core.data
 
+import android.util.Log
 import kotlinx.coroutines.flow.*
 import org.irham3.core.data.source.remote.network.ApiResponse
 
@@ -25,7 +26,7 @@ abstract class NetworkBoundResource<ResultType, RequestType> {
                 is ApiResponse.Error -> {
                     onFetchFailed()
                     emit(
-                        Resource.Error<ResultType>(apiResponse.errorMessage)
+                        Resource.Error(apiResponse.errorMessage)
                     )
                 }
             }

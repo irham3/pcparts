@@ -11,5 +11,5 @@ data class Component(
     val price: Int,
     val url: String,
     val image: String,
-    val isFavorite: Boolean
+    var isFavorite: Boolean
 ) : Parcelable

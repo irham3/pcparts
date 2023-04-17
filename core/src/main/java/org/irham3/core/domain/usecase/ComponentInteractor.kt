@@ -3,7 +3,7 @@ package org.irham3.core.domain.usecase
 import org.irham3.core.domain.model.Component
 import org.irham3.core.domain.repository.IComponentRepository
 
-class ComponentInteractor(private val componentRepository: IComponentRepository): TourismUseCase {
+class ComponentInteractor(private val componentRepository: IComponentRepository): ComponentUseCase {
 
     override fun getAllComponent() = componentRepository.getAllComponent()
     override fun getFavoriteComponent() = componentRepository.getFavoriteComponent()

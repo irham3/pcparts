@@ -3,6 +3,7 @@ package org.irham3.core.di
 import androidx.room.Room
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import org.irham3.core.BuildConfig
 import org.irham3.core.data.ComponentRepository
 import org.irham3.core.data.source.local.LocalDataSource
 import org.irham3.core.data.source.local.room.ComponentDatabase
@@ -21,7 +22,7 @@ val databaseModule = module {
     single {
         Room.databaseBuilder(
             androidContext(),
-            ComponentDatabase::class.java, "Tourism.db"
+            ComponentDatabase::class.java, "Component.db"
         ).fallbackToDestructiveMigration().build()
     }
 }
@@ -36,7 +37,7 @@ val networkModule = module {
     }
     single {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://tourism-api.dicoding.dev/")
+            .baseUrl(BuildConfig.BASE_API_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .client(get())
             .build()

@@ -6,7 +6,7 @@ import org.irham3.core.domain.model.Component
 
 object DataMapper {
     fun mapResponsesToEntities(input: List<ComponentResponse>): List<ComponentEntity> {
-        val tourismList = ArrayList<ComponentEntity>()
+        val componentList = ArrayList<ComponentEntity>()
         input.map {
             val tourism = ComponentEntity(
                 componentId = it.id,
@@ -17,9 +17,9 @@ object DataMapper {
                 image = it.imgFilename,
                 isFavorite = false
             )
-            tourismList.add(tourism)
+            componentList.add(tourism)
         }
-        return tourismList
+        return componentList
     }
 
     fun mapEntitiesToDomain(input: List<ComponentEntity>): List<Component> =
@@ -31,7 +31,7 @@ object DataMapper {
                 url = it.url,
                 price = it.price,
                 image = it.image,
-                isFavorite = false
+                isFavorite = it.isFavorite
             )
         }
 
@@ -42,6 +42,6 @@ object DataMapper {
         url = input.url,
         price = input.price,
         image = input.image,
-        isFavorite = false
+        isFavorite = input.isFavorite
     )
 }

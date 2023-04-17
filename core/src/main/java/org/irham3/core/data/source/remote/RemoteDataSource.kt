@@ -11,20 +11,17 @@ import org.irham3.core.data.source.remote.response.ComponentResponse
 
 class RemoteDataSource(private val apiService: ApiService) {
 
-    suspend fun getAllPart(): Flow<ApiResponse<List<ComponentResponse>>> {
-        //get data from remote api
+    suspend fun getAllComponent(): Flow<ApiResponse<List<ComponentResponse>>> {
         return flow {
             try {
-                val response = apiService.getList()
-                val dataArray = response.response
-                if (dataArray.isNotEmpty()){
-                    emit(ApiResponse.Success(response.response))
+                val response = apiService.getComponents()
+                if (response.isNotEmpty()){
+                    emit(ApiResponse.Success(response))
                 } else {
                     emit(ApiResponse.Empty)
                 }
             } catch (e : Exception){
                 emit(ApiResponse.Error(e.toString()))
-                Log.e("RemoteDataSource", e.toString())
             }
         }.flowOn(Dispatchers.IO)
     }

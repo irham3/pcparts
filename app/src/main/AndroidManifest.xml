@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,10 +13,11 @@
         android:theme="@style/Theme.PCParts"
         tools:targetApi="31">
         <activity
-            android:name=".detail.DetailPartActivity"
+            android:name=".detail.DetailComponentActivity"
+            android:parentActivityName=".main.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".main.MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main">
             <intent-filter>

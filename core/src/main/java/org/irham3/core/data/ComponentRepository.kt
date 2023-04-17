@@ -26,11 +26,10 @@ class ComponentRepository(
             }
 
             override fun shouldFetch(data: List<Component>?): Boolean =
-//                data == null || data.isEmpty()
-                true
+                data.isNullOrEmpty()
 
             override suspend fun createCall(): Flow<ApiResponse<List<ComponentResponse>>> =
-                remoteDataSource.getAllPart()
+                remoteDataSource.getAllComponent()
 
             override suspend fun saveCallResult(data: List<ComponentResponse>) {
                 val componentList = DataMapper.mapResponsesToEntities(data)

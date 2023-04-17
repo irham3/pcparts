@@ -4,21 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="org.irham3.pcparts.main.MainActivity">
 
-    <GridView
-        android:id="@+id/gv_part"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_component"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:numColumns="2"
-        android:horizontalSpacing="16dp"
-        android:verticalSpacing="16dp"
-        android:padding="16dp"
-        tools:listitem="@layout/item_list_parts"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        tools:listitem="@layout/item_list_component" />
+
 
     <include
         android:id="@+id/view_empty"

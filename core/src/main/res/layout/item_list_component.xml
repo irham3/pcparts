@@ -41,35 +41,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_item_title"
+            app:layout_constraintBottom_toTopOf="@+id/tv_item_name"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/tv_item_title"
+            android:id="@+id/tv_item_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
             android:textColor="#FFFFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/tv_item_subtitle"
+            app:layout_constraintBottom_toTopOf="@+id/tv_item_price"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:text="@string/text_title" />
+            tools:text="@string/text_component_name" />
 
         <TextView
-            android:id="@+id/tv_item_subtitle"
+            android:id="@+id/tv_item_price"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#000000"
+            android:textColor="#FFEE58"
             app:layout_constraintBottom_toBottomOf="@+id/iv_item_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:text="@string/text_description" />
+            tools:text="@string/text_component_price" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="image_description">Gambar</string>
-    <string name="text_title">Teks Judul</string>
-    <string name="text_description">Teks Deskripsi</string>
+    <string name="text_component_name">Nama Komponen</string>
+    <string name="text_component_price">Harga Komponen</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_favorite">Favorite</string>
+
+    <string name="no_data">Belum ada favorite</string>
+    <string name="something_wrong">Oops.. something went wrong</string>
 </resources>

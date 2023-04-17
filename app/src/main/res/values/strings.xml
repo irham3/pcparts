@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">PC Parts</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_favorite">Favorite</string>
 
-    <string name="no_data">Belum ada favorite</string>
     <string name="something_wrong">Oops.. something went wrong</string>
+    <string name="deskripsi_komponen">Deskripsi Komponen</string>
+    <string name="link_komponen"><a href="%1$s">Link pembelian</a></string>
+    <string name="beli">Beli</string>
 </resources>

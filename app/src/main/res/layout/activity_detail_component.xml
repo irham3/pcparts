@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".detail.DetailPartActivity">
+    tools:context=".detail.DetailComponentActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
@@ -39,16 +39,26 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include android:id="@+id/content" layout="@layout/content_detail_part" />
+    <include android:id="@+id/content" layout="@layout/content_detail_component" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:backgroundTint="#FA2953"
         android:layout_margin="@dimen/fab_margin"
         android:contentDescription="@string/title_favorite"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@drawable/ic_favorite_black_24dp" />
+        app:srcCompat="@drawable/ic_favorite_white" />
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/content"
+        app:layout_anchorGravity="bottom|end"
+        android:text="@string/beli"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

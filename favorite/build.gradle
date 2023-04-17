@@ -22,15 +22,23 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
     }
     buildToolsVersion '33.0.2'
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
     implementation project(":app")
     implementation project(":core")
     implementation fileTree(dir: "libs", include: ["*.jar"])
+
 
 }
