@@ -1,16 +1,13 @@
 package org.irham3.favorite
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import org.irham3.core.data.Resource
 import org.irham3.core.ui.ComponentAdapter
 import org.irham3.favorite.databinding.ActivityFavoriteBinding
 import org.irham3.favorite.di.favoriteModule
-import org.irham3.pcparts.R
 import org.irham3.pcparts.detail.DetailComponentActivity
 import org.koin.android.viewmodel.ext.android.viewModel
 import org.koin.core.context.loadKoinModules
@@ -41,7 +38,6 @@ class FavoriteActivity : AppCompatActivity() {
 
         favoriteViewModel.favoriteComponent.observe(this@FavoriteActivity) { component ->
             if (component != null) {
-                val componentAdapter = ComponentAdapter()
                 componentAdapter.onItemClick = { selectedData ->
                     val intent = Intent(this@FavoriteActivity, DetailComponentActivity::class.java)
                     intent.putExtra(DetailComponentActivity.EXTRA_DATA, selectedData)

@@ -4,7 +4,6 @@
     <string name="text_component_name">Nama Komponen</string>
     <string name="text_component_price">Harga Komponen</string>
 
-    <string name="title_home">Home</string>
     <string name="title_favorite">Favorite</string>
 
     <string name="no_data">Belum ada favorite</string>

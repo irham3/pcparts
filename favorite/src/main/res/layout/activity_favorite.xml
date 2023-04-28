@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.irham3.pcparts.main.MainActivity">
+    tools:context="org.irham3.favorite.FavoriteActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_component"
+        android:id="@+id/rvComponent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/item_list_component" />
 
 
     <include
-        android:id="@+id/view_empty"
+        android:id="@+id/viewEmpty"
         layout="@layout/view_empty"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"

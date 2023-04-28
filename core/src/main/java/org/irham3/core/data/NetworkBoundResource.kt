@@ -1,6 +1,5 @@
 package org.irham3.core.data
 
-import android.util.Log
 import kotlinx.coroutines.flow.*
 import org.irham3.core.data.source.remote.network.ApiResponse
 
@@ -37,6 +36,7 @@ abstract class NetworkBoundResource<ResultType, RequestType> {
         }
     }
 
+    @Suppress("EmptyMethod")
     protected open fun onFetchFailed() {}
 
     protected abstract fun loadFromDB(): Flow<ResultType>

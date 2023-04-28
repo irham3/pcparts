@@ -13,6 +13,7 @@ import org.irham3.pcparts.R
 import org.irham3.pcparts.databinding.ActivityDetailComponentBinding
 import org.koin.android.viewmodel.ext.android.viewModel
 
+@Suppress("DEPRECATION")
 class DetailComponentActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailComponentBinding
     private val detailComponentViewModel: DetailComponentViewModel by viewModel()

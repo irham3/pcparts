@@ -11,11 +11,6 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.PCParts.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
     <style name="Theme.PCParts.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.PCParts.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

@@ -4,6 +4,5 @@
 
     <string name="something_wrong">Oops.. something went wrong</string>
     <string name="deskripsi_komponen">Deskripsi Komponen</string>
-    <string name="link_komponen"><a href="%1$s">Link pembelian</a></string>
     <string name="beli">Beli</string>
 </resources>

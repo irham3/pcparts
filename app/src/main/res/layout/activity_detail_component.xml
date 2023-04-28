@@ -23,7 +23,7 @@
             app:toolbarId="@+id/toolbar">
 
             <ImageView
-                android:id="@+id/iv_detail_image"
+                android:id="@+id/ivDetailImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/image_description"
@@ -39,7 +39,8 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include android:id="@+id/content" layout="@layout/content_detail_component" />
+    <include android:id="@+id/content"
+        layout="@layout/content_detail_component" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -53,7 +54,7 @@
         app:srcCompat="@drawable/ic_favorite_white" />
 
     <Button
-        android:id="@+id/btn_buy"
+        android:id="@+id/btnBuy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"

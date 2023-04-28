@@ -17,4 +17,6 @@ dependencies {
     implementation "io.insert-koin:koin-core:2.1.6"
     implementation "io.insert-koin:koin-android:2.1.6"
     implementation 'io.insert-koin:koin-android-viewmodel:2.2.3'
+
+    implementation "com.facebook.shimmer:shimmer:0.5.0"
 }

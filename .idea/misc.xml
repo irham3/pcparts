@@ -1,4 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0">
+      <entry_point TYPE="method" FQNAME="org.irham3.core.data.ComponentRepository$-1 java.lang.Object saveCallResult(java.util.List&lt;org.irham3.core.data.source.remote.response.ComponentResponse&gt; data, kotlin.coroutines.Continuation&lt;? super kotlin.Unit&gt; $completion)" />
+      <entry_point TYPE="method" FQNAME="org.irham3.core.data.ComponentRepository$-1 boolean shouldFetch(java.util.List&lt;org.irham3.core.domain.model.Component&gt; data)" />
+    </entry_points>
+    <pattern value="org.irham3.core.data.source.local.room.ComponentDao" method="insertComponent" />
+    <pattern value="org.irham3.core.data.ComponentRepository" />
+    <pattern value="org.irham3.core.data.ComponentRepository" method="getAllComponent" />
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

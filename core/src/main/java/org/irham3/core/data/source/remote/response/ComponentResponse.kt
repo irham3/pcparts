@@ -1,7 +1,9 @@
 package org.irham3.core.data.source.remote.response
 
+import androidx.annotation.Keep
 import com.google.gson.annotations.SerializedName
 
+@Keep
 data class ComponentResponse(
 
 	@field:SerializedName("id")
