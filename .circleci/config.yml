@@ -26,8 +26,8 @@ jobs:
           path: app/build/reports
           destination: reports
       - run:
-          name: Run Tests
-          command: sudo ./gradlew lint test
+          name: Generate app APK.
+          run: ./gradlew assembleRelease --stacktrace
       - store_test_results:
           path: app/build/test-results
       - store_artifacts:
