@@ -14,8 +14,9 @@
           - run:
               name: Chmod permissions
               command: sudo chmod +x ./gradlew- run
-          - name: Android Home
-            command: sudo ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
+          - run:
+              name: Android Home
+              command: sudo ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
           - run:
               name: Download Dependencies
               command: ./gradlew androidDependencies
