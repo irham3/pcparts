@@ -30,12 +30,6 @@ class FavoriteActivity : AppCompatActivity() {
 
     private fun showFavoriteList() {
         val componentAdapter = ComponentAdapter()
-        componentAdapter.onItemClick = { selectedComponent ->
-            val intent = Intent(this, DetailComponentActivity::class.java)
-            intent.putExtra(DetailComponentActivity.EXTRA_DATA, selectedComponent)
-            startActivity(intent)
-        }
-
         favoriteViewModel.favoriteComponent.observe(this@FavoriteActivity) { component ->
             if (component != null) {
                 componentAdapter.onItemClick = { selectedData ->
