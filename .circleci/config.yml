@@ -5,6 +5,8 @@
      
     jobs:
       build:
+        docker:
+          - image: openjdk:17-jdk
         executor: android/android
         steps:
           - checkout
