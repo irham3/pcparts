@@ -10,7 +10,7 @@ interface ComponentDao {
     @Query("SELECT * FROM component")
     fun getAllComponent(): Flow<List<ComponentEntity>>
 
-    @Query("SELECT * FROM component where isFavorite = 1")
+    @Query("SELECT * FROM component WHERE isFavorite = 1")
     fun getFavoriteComponent(): Flow<List<ComponentEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
