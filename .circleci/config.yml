@@ -8,10 +8,8 @@ jobs:
     executor: android/android
     machine:
       environment:
-        ANDROID_HOME: /usr/local/android-sdk-linux
+        ANDROID_HOME: /usr/local/android-sdk
         JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
-      java:
-        version: openjdk17
 
     steps:
       - checkout
